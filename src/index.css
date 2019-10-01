@@ -1,10 +1,15 @@
 .title {
   border: 1px solid red;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .title h1 {
   font-size: 5rem;
   color: white;
   font-family: 'Cormorant Garamond', serif;
+}
+.title h1 span:nth-of-type(odd) {
+  font-family: 'Exo', sans-serif;
 }
 .card {
   border: 1px solid red;

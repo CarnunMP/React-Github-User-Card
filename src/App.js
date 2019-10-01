@@ -51,7 +51,7 @@ export default class App extends React.Component {
       <div className="App">
         <div className="title">
           <h1>
-            GEThub USER Pages
+            <span>GET</span><span>hub </span><span>USER-</span><span>Pages</span>
           </h1>
         </div>
         <UserCard 
