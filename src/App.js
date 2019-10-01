@@ -3,6 +3,7 @@ import './App.css';
 
 import axios from "axios";
 import UserCard from './components/UserCard';
+import FollowerCards from './components/FollowerCards';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -63,6 +64,7 @@ export default class App extends React.Component {
           following={following}
           profileURL={profileURL}
         />
+        <FollowerCards followers={this.state.followers} />
       </div>
     );
   }

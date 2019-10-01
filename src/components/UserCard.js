@@ -6,7 +6,7 @@ export default class UserCard extends React.Component {
         return (
             <div className="card user">
                 <div className="avatar-div">
-                    <img src={avatarURL} />
+                    <img src={avatarURL} alt="user_avatar"/>
                 </div>
                 <div className="text-div">
                     <h2>{name}</h2>
