@@ -1,4 +1,18 @@
+.title {
+  border: 1px solid red;
+}
+.title h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+}
+.card {
+  border: 1px solid red;
+  border-radius: 10px;
+}
 .App {
   background: #0a0a0a;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
