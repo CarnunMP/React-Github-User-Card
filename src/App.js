@@ -17,14 +17,17 @@ export default class App extends React.Component {
         followers: null,
         following: null,
         profileURL: null,
-      }
+      },
+      followers: null,
     };
   }
 
   componentDidMount() {
-    axios.get("https://api.github.com/users/carnunmp")
-      .then(res => {
-        const user = res.data;
+    const userPromise = axios.get("https://api.github.com/users/carnunmp");
+    const followersPromise = axios.get("https://api.github.com/users/carnunmp/followers");
+    Promise.all([userPromise, followersPromise])
+      .then(([userRes, followersRes]) => {
+        const user = userRes.data;
         this.setState({
           user: {
             name: user.name,
@@ -35,7 +38,8 @@ export default class App extends React.Component {
             followers: user.followers,
             following: user.following,
             profileURL: user.url,
-          }
+          },
+          followers: followersRes.data,
         })
       });
   }
