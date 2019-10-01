@@ -10,6 +10,12 @@ export default class UserCard extends React.Component {
                 </div>
                 <div className="text-div">
                     <h2>{name}</h2>
+                    <h3>{username}</h3>
+                    <h4>{location}</h4>
+                    <p>{bio}</p>
+                    <span>Followers: {followers}</span>
+                    <span>Following: {following}</span>
+                    <p>Profile: {profileURL}</p>
                 </div>
             </div>
         )
