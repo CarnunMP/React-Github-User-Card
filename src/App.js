@@ -38,7 +38,7 @@ export default class App extends React.Component {
             bio: user.bio,
             followers: user.followers,
             following: user.following,
-            profileURL: user.url,
+            profileURL: user.html_url,
           },
           followers: followersRes.data,
         })

@@ -1,19 +1,137 @@
 .title {
-  border: 1px solid red;
   text-align: center;
-  margin-bottom: 2rem;
 }
 .title h1 {
   font-size: 5rem;
-  color: white;
+  color: #dbdbdb;
   font-family: 'Cormorant Garamond', serif;
 }
 .title h1 span:nth-of-type(odd) {
   font-family: 'Exo', sans-serif;
 }
 .card {
-  border: 1px solid red;
   border-radius: 10px;
+  background: #413434;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.card.user {
+  margin: 5rem 10rem 5rem 10rem;
+}
+.card.user .avatar-div {
+  width: 30%;
+  height: 30%;
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card.user .avatar-div img {
+  width: 100%;
+}
+.card.user .text-div {
+  background: #9e9494;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.card.user .text-div h2 {
+  font-size: 3rem;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 0.2rem;
+}
+.card.user .text-div h3 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 1rem;
+}
+.card.user .text-div h4 {
+  font-size: 1.5rem;
+  font-family: 'Palanquin', sans-serif;
+  margin-bottom: 0.5rem;
+}
+.card.user .text-div p {
+  font-family: 'Palanquin', sans-serif;
+  margin-bottom: 0.5rem;
+}
+.card.user .text-div p:nth-of-type(1) {
+  font-weight: bold;
+}
+.card.user .text-div p:nth-of-type(2) {
+  margin-bottom: 0.2rem;
+}
+.card.follower {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+.card.follower a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.card.follower a .avatar-div {
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid black;
+}
+.card.follower a .avatar-div img {
+  width: 100%;
+}
+.card.follower a .text-div {
+  margin-top: 0.5rem;
+  background: #9e9494;
+  border-radius: 5px;
+  width: 70%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card.follower a .text-div h4 {
+  font-family: 'Exo', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.follower-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.followers-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.followers-header h2 {
+  font-family: 'Exo', sans-serif;
+  color: #dbdbdb;
+  font-size: 3rem;
 }
 .App {
   background: #0a0a0a;

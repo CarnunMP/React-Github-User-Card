@@ -13,9 +13,9 @@ export default class UserCard extends React.Component {
                     <h3>{username}</h3>
                     <h4>{location}</h4>
                     <p>{bio}</p>
-                    <span>Followers: {followers}</span>
-                    <span>Following: {following}</span>
-                    <p>Profile: {profileURL}</p>
+                    <p>Followers: {followers}</p>
+                    <p>Following: {following}</p>
+                    <p>Profile: <a href={profileURL}>{profileURL}</a></p>
                 </div>
             </div>
         )

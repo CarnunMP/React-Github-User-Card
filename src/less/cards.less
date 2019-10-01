@@ -1,8 +1,119 @@
 .card {
-    border: 1px solid red;
     border-radius: 10px;
+    background: rgb(65, 52, 52);
+    .flex(row, flex-start, center);
+    padding: 2rem;
 
-    .user {
+    &.user {
+        margin: 5rem 10rem 5rem 10rem;
 
+        .avatar-div {
+            width: 30%;
+            height: 30%;
+            border: 3px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            .flex(row, center, center);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-div {
+            background: rgb(158, 148, 148);
+            margin-left: 1rem;
+            .flex(column, center, flex-start);
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 1rem;
+
+            h2 {
+                font-size: 3rem;
+                font-family: @header-font;
+                margin-bottom: 0.2rem;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                font-style: italic;
+                font-family: @header-font;
+                margin-bottom: 1rem;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                font-family: @body-font;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-family: @body-font;
+                margin-bottom: 0.5rem;
+
+                &:nth-of-type(1) {
+                    font-weight: bold;
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 0.2rem;
+                }
+            }
+        }
+    }
+
+    &.follower {
+        width: 18%;
+        .flex(row, center, center);
+        margin: 0.5rem;
+
+        a {
+            .flex(column, center, center);
+            text-decoration: none;
+
+            .avatar-div {
+                width: 80%;
+                height: 80%;
+                border-radius: 5px;
+                .flex(row, center, center);
+                overflow: hidden;
+                border: 2px solid black;
+    
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text-div {
+                margin-top: 0.5rem;
+                background: rgb(158, 148, 148);
+                border-radius: 5px;
+                width: 70%;
+                height: 2rem;
+                .flex(row, center, center);
+
+                h4 {
+                    font-family: @header-font;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.follower-cards {
+    .flex(row, center, flex-start);
+    flex-wrap: wrap;
+}
+
+.followers-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+        font-family: @header-font;
+        color: rgb(219, 219, 219);
+        font-size: 3rem;
     }
 }
