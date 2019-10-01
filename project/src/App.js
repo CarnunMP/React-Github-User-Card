@@ -41,6 +41,7 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { name, username, avatarURL, location, bio, followers, following, profileURL } = this.state.user;
     return (
       <div className="App">
         <div className="title">
@@ -49,14 +50,14 @@ export default class App extends React.Component {
           </h1>
         </div>
         <UserCard 
-          name={this.state.name}
-          username={this.state.username}
-          avatarURL={this.state.avatarURL}
-          location={this.state.location}
-          bio={this.state.bio}
-          followers={this.state.followers}
-          following={this.state.following}
-          profileURL={this.state.profileURL}
+          name={name}
+          username={username}
+          avatarURL={avatarURL}
+          location={location}
+          bio={bio}
+          followers={followers}
+          following={following}
+          profileURL={profileURL}
         />
       </div>
     );

@@ -8,6 +8,9 @@ export default class UserCard extends React.Component {
                 <div className="avatar-div">
                     <img src={avatarURL} />
                 </div>
+                <div className="text-div">
+                    <h2>{name}</h2>
+                </div>
             </div>
         )
     }
